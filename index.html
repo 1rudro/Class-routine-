@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ক্লাস রুটিন - Rudro Biswas</title>
+    <style>
+        :root {
+            --primary-bg: #f0f4f8;
+            --header-bg: linear-gradient(135deg, #667eea 10%, #764ba2 90%);
+            --accent-color: #ff6b6b;
+            --table-border: #d1d5db;
+            --text-color: #2d3436;
+            --fb-blue: #1877F2;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--primary-bg);
+            color: var(--text-color);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #4834d4;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        
+        .routine-container {
+            width: 100%;
+            max-width: 1000px;
+            background: white;
+            border-radius: 13px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            overflow-x: auto; 
+            animation: slideUp 0.8s ease-out;
+            border: 2px solid #e0e0e0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 700px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid var(--table-border);
+        }
+
+        th {
+            background: var(--header-bg);
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+    
+        .tiffin-col {
+            background-color: #fff3e0;
+            font-weight: bold;
+            color: #e65100;
+            vertical-align: middle;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            padding: 10px;
+            font-size: 1.2rem;
+        }
+
+  
+        tr:nth-child(even) { background-color: white; }
+        tr:hover {
+            background-color:  #edf2ff;
+            transition: 1.0s;
+        }
+
+    
+        @media screen and (max-width: 600px) {
+            body { padding: 10px; }
+            h1 { font-size: 1.5rem; }
+            th, td { padding: 10px 5px; font-size: 0.85rem; }
+            .tiffin-col { font-size: 1rem; }
+        }
+
+  
+        .footer {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .fb-link {
+            text-decoration: none;
+            color: var(--fb-blue);
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.1rem;
+            transition: transform 0.2s;
+        }
+
+        .fb-link:hover {
+            transform: scale(1.25);
+        }
+
+        .fb-icon {
+            width: 30px;
+            height: 30px;
+            fill: var(--fb-blue);
+        }
+
+          @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /*Subjects */
+        .math { color: #53EAFD; font-weight: 600; }
+        .ph { color: #00BCD4; font-weight: 600; }
+        .eng2 { color: #311B92; font-weight: 600; }
+        .ban2 { color: #2E7D32; font-weight: 600; }
+        .eng1 { color: #FFD230; font-weight: 600; }
+        .rel { color: #5D4037; font-weight: 600; }
+        .ban1 { color: #6D4C41; font-weight: 600; }
+        .ict { color: #311B92; font-weight: 600; }
+        .chi { color: #FDA5D5; font-weight: 600; }
+        .hmath { color: #FFB86A; font-weight: 600; }
+        .his { color: #7E2A0C; font-weight: 600; }
+        .bio { color: #AFC316; font-weight: 600; }
+        .dot { color: black;
+        
+    </style>
+</head>
+<body>
+
+    <h1><a class="dot">•</a> সাপ্তাহিক ক্লাস রুটিন <a class="dot">•</a></h1>
+    <h1><a class="dot">•</a> নবম <a class="dot">•</a> বিজ্ঞান <a class="dot">•</a></h1>
+
+    <div class="routine-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>বার</th>
+                    <th>১ম পিরিয়ড</th>
+                    <th>২য় পিরিয়ড</th>
+                    <th>৩য় পিরিয়ড</th>
+                    <th>৪র্থ পিরিয়ড</th>
+                    <th>৫ম পিরিয়ড</th>
+                    <th>৬ষ্ঠ পিরিয়ড</th>
+                    <th>৭ম পিরিয়ড</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- রবিবার -->
+                <tr>
+                    <td><b>রবিবার</b></td>
+                    <td class="ban1">বাংলা ১ম</td>
+                    <td class="math">গণিত</td>
+                    <td class="chi">রসায়ন</td>
+                    <td class="eng1">ইংরেজি ১ম</td>
+                    <td class="eng2">ইংরেজি ২য়</td>
+                    <td class="bio">জীব বিজ্ঞান</td>
+                    <td class="his">বা ও বি</td>
+                </tr>
+                <!-- সোমবার -->
+                <tr>
+                    <td><b>সোমবার</b></td>
+                    <td class="ban1">বাংলা ১ম</td>
+                    <td class="math">গণিত</td>
+                    <td class="chi">রসায়ন</td>
+                    <td class="eng1">ইংরেজি ১ম</td>
+                    <td class="ph">পদার্থ বিজ্ঞান</td>
+                    <td class="bio">জীব বিজ্ঞান</td>
+                    <td class="his">বা ও বি</td>
+                </tr>
+                <!-- মঙ্গলবার -->
+                <tr>
+                    <td><b>মঙ্গলবার</b></td>
+                    <td class="ban1">বাংলা ১ম</td>
+                    <td class="ict">তথ্য</td>
+                    <td class="chi">রসায়ন</td>
+                    <td class="hmath">উচ্চ গণিত</td>
+                    <td class="eng2">ইংরেজি ২য়</td>
+                    <td class="bio">জীব বিজ্ঞান</td>
+                    <td class="his">বা ও বি</td>
+                </tr>
+                <!-- বুধবার -->
+                <tr>
+                    <td><b>বুধবার</b></td>
+                    <td class="ban2">বাংলা ২য়</td>
+                    <td class="math">গণিত</td>
+                    <td class="eng1">ইংরেজি ১ম</td>
+                    <td class="ph">পদার্থ বিজ্ঞান</td>
+                    <td class="hmath">উচ্চ গণিত</td>
+                    <td class="rel">ধর্ম</td>
+                    <td class="ict">তথ্য</td>
+                </tr>
+                <!-- বৃহস্পতিবার -->
+                <tr>
+                    <td><b>বৃহস্পতিবার</b></td>
+                    <td class="ban2">বাংলা ২য়</td>
+                    <td class="math">গণিত</td>
+                    <td class="eng1">ইংরেজি ১ম</td>
+                    <td class="ph">পদার্থ বিজ্ঞান</td>
+                    <td class="hmath">উচ্চ গণিত</td>
+                    <td class="rel">ধর্ম</td>
+                    <td class="eng2">ইংরেজি ২য়</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        <a href="https://www.facebook.com/share/184uoKFwFz/" target="_blank" class="fb-link">
+            <!-- Inline SVG Facebook Logo -->
+            <svg class="fb-icon" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+            Rudro Biswas
+        </a>
+    </div>
+
+</body>
+</html>
+
+  
